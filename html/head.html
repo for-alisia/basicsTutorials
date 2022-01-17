@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<!-- Example how to specify language of the document <html lang="en-GB"> -->
+<html lang="en">
+  <head>
+    <!-- Should go first -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- We use viewport for the responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Redirect page to google after 5 seconds on this page-->
+    <!-- Time should be not to short (if you are not a spamer) -->
+    <meta http-equiv="refresh" content="5; URL='https://google.com'" />
+    <!-- Let's refresh a page in a 60 seconds (but better to use JS) -->
+    <meta http-equiv="refresh" content="60" />
+    <!-- Change controls in the browser to this color -->
+    <!-- Support in browsers is awfull (only mobile) -->
+    <meta name="theme-color" content="#eee" />
+    <!-- Describe the page (but search engines do not use it anymore) -->
+    <!-- But they can use description for the snippet in the search results -->
+    <meta
+      name="description"
+      content="This is a sample how to use meta tags in the head of the document"
+    />
+    <meta name="keywords" content="HTML, meta, head, head of HTML" />
+    <meta name="author" content="Elena Romanova" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- We can specify language for any tag -->
+    <p lang="ru">
+      Вы будете перенаправлены на страницу <a href="https://google.com">Google</a> через 5 секунд...
+    </p>
+  </body>
+</html>
