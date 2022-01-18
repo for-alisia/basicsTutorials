@@ -24,12 +24,60 @@
     />
     <meta name="keywords" content="HTML, meta, head, head of HTML" />
     <meta name="author" content="Elena Romanova" />
-    <title>Document</title>
+    <!-- We can information structured as Open Graph -->
+    <!-- It's using for Facebook - to show the preview on sharing -->
+    <meta property="og:title" content="Meta head in the HTML" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="This page describes how to use meta tags in HTML" />
+    <meta property="og:url" content="https://url.of.the.website/contacts" />
+    <meta property="og:image" content="https://some.image.com" />
+    <meta property="og:image:alt" content="Example image" />
+    <meta property="og:image:width" content="400px" />
+    <meta property="og:image:height" content="200px" />
+    <!-- Base url -->
+    <base href="https://someurl.com" />
+    <!-- All links will be opened in a new tab -->
+    <base target="_blank" />
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+    <!-- Styles -->
+    <!-- Remember - styles loading blocking operation!!!-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Scripts -->
+    <!-- Blocking operation too -->
+    <script src="/js/some.js"></script>
+    <!-- Async download, executes after parsing the whole page -->
+    <script src="/js/some.js" defer></script>
+    <!-- Async download, executes after downloading -->
+    <script src="/js/some.js" async></script>
+    <!-- Embeded styles -->
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+    </style>
+    <!-- Embeded JS -->
+    <script>
+      console.log('It is embeded JS');
+    </script>
+    <!-- Title will be: title of the tab, in bookmarks, in search snippets -->
+    <title>HTML Meta Tags - how to use</title>
   </head>
   <body>
     <!-- We can specify language for any tag -->
     <p lang="ru">
       Вы будете перенаправлены на страницу <a href="https://google.com">Google</a> через 5 секунд...
     </p>
+    <!-- Better for the perfomance -->
+    <script src="/js/some.js"></script>
   </body>
 </html>
